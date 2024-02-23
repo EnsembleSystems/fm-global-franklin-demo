@@ -1,4 +1,5 @@
 /* do not change fragment block */
+
 /* suppress nested section padding */
 .fragment-wrapper > .section {
   padding-left: 0;
