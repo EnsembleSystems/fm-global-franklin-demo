@@ -5,9 +5,14 @@
   --light-color: #eee;
   --dark-color: #ccc;
   --text-color: black;
+  --nav-link-color: white;
 
   /* nav height */
   --nav-height: 64px;
+
+  /* body sizes */
+  --body-font-size-s: 14px;
+  --body-font-size-l: 18px;
 }
 
 * {
@@ -61,3 +66,4 @@ a.button:any-link, button {
 a.button:hover, a.button:focus, button:hover, button:focus  {
   cursor: pointer;
 }
+
