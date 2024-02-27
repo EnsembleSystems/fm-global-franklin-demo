@@ -31,3 +31,54 @@
   padding-top: 1.25rem;
   color: var(--nav-link-color)
 }
+
+.footer {
+  background-color: #272b2e;
+}
+
+.footer ul {
+  display: flex;
+  justify-content: start;
+  padding: 0;
+  list-style: none;
+  gap: 20px;
+}
+
+.footer li {
+  padding: 0 10px;
+}
+
+.footer p {
+  margin-left: 0;
+  font-size: 0.8em;
+  color: #fff;
+  opacity: 0.7;
+}
+
+.colorStripe {
+  display: flex;
+}
+
+.colorStripeSegment {
+  height: 14px;
+}
+
+.teal {
+  width: 25%;
+  background-color: #6ABFDD;
+}
+
+.gray {
+  width: 13%;
+  background-color: #5D666F;
+}
+
+.purple {
+  width: 42%;
+  background-color: #7B2B63;
+}
+
+.yellow {
+  width: 20%;
+  background-color: #F5BE58;
+}
