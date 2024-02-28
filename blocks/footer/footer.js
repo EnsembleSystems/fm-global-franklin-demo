@@ -10,12 +10,6 @@ let isFooterLoaded = false;
  * @param {Element} block The footer block element.
  */
 export default async function decorate(block) {
-  // Check if the footer is already loaded or being loaded, then skip further execution
-  if (isFooterLoaded) return;
-
-  // Mark as loading (to prevent duplicate calls while awaiting fetch response)
-  isFooterLoaded = true;
-
   const footerMeta = getMetadata('footer');
   block.textContent = '';
 
@@ -23,26 +17,21 @@ export default async function decorate(block) {
   const footerPath = footerMeta.footer || '/footer';
   const fragment = await loadFragment(footerPath);
 
-  if (fragment) {
-    // Decorate footer DOM
-    const footer = document.createElement('div');
-    while (fragment.firstElementChild) {
-      footer.append(fragment.firstElementChild);
-    }
+  // Decorate footer DOM
+  const footer = document.createElement('div');
+  while (fragment.firstElementChild) {
+    footer.append(fragment.firstElementChild);
+  }
 
-    block.append(footer); // Ensure footer is appended before manipulating its content
+  block.append(footer); // Ensure footer is appended before manipulating its content
 
-    // Now that the footer is guaranteed to be in the DOM, select and manipulate it
-    const footerContainer = document.querySelector('.footer-container');
-    if (footerContainer) {
-      const colorStripe = createColorStripe();
+  // Now that the footer is guaranteed to be in the DOM, select and manipulate it
+  const footerBottom = document.querySelector('.footer-bottom-wrapper');
+  if (footerBottom) {
+    const colorStripe = createColorStripe();
 
-      footerContainer.prepend(colorStripe);
-    } else {
-      console.error('Footer container not found');
-    }
+    footerBottom.prepend(colorStripe);
   } else {
-    // If loading failed for some reason, reset isFooterLoaded to allow retry
-    isFooterLoaded = false;
+    console.error('Footer Bottom not found');
   }
 }
