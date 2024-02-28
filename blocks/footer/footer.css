@@ -1,8 +1,15 @@
+.footer-links-wrapper {
+  background-color: #32373A;
+}
+
+.footer-navigation-wrapper {
+  background-color: #5a6167;
+}
+
 .footer-navigation {
-  padding: 5rem 0;
+  padding: 5rem 10rem;
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
-  background-color: #5a6167;
 }
 
 .footer-navigation h6 {
@@ -16,10 +23,9 @@
 }
 
 .footer-links {
-  padding: 5rem 0;
+  padding: 5rem 10rem;
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  background-color: #32373A;
 }
 
 .footer-links h6 {
