@@ -1,1 +1,19 @@
-/* here goes footer styles */
+.footer-navigation-wrapper {
+    background-color: #5a6167;
+}
+
+.footer-navigation {
+    padding: 5rem 10rem;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.footer-navigation h6 {
+    font-size: var(--body-font-size-l);
+    color: var(--nav-link-color);
+}
+
+.footer-navigation p {
+    padding-top: 1.25rem;
+    color: var(--nav-link-color)
+}

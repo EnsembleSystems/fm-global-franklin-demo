@@ -1,1 +1,19 @@
-/* here goes footer styles */
+.footer-links-wrapper {
+    background-color: #32373A;
+}
+
+.footer-links {
+    padding: 5rem 10rem;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.footer-links h6 {
+    font-size: var(--body-font-size-l);
+    color: var(--nav-link-color);
+}
+
+.footer-links p {
+    padding-top: 1.25rem;
+    color: var(--nav-link-color)
+}

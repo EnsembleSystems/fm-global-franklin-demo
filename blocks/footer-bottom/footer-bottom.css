@@ -1,0 +1,29 @@
+.footer-bottom {
+    padding: 0rem 10rem;
+}
+
+.footer-bottom ul {
+    display: flex;
+    justify-content: start;
+    padding: 0;
+    list-style: none;
+    gap: 20px;
+    float: left;
+}
+
+.footer-bottom li {
+    padding: 0 10px;
+    color: #99918a;
+}
+
+.footer-bottom p {
+    margin-left: 0;
+    font-size: 0.8em;
+    color: #99918a;
+    opacity: 0.7;
+    float: right;
+}
+
+.footer-bottom a {
+    color: #99918a;
+}
